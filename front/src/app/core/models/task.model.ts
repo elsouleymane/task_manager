@@ -1,10 +1,12 @@
 export interface Task {
-  id: number;
+  task_id?: string;
+  created_by: {
+    username: string;
+  };
+  assigned_to: number;
   title: string;
   description: string;
-  status: 'todo' | 'in_progress' | 'done';
-  created_by: number;
-  assigned_to: number | null;
-  created_at: string;
-  updated_at: string;
+  status: string;
+  created_at?: string;
+  updated_at?: string;
 }

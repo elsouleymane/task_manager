@@ -44,3 +44,6 @@ front/.gitignore
 # System files
 .DS_Store
 Thumbs.db
+back/back/__pycache__/
+migrations/
+
